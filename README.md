@@ -85,7 +85,7 @@
     Now, I will do a hypothesis testing for my initial question I presented in the introduction. <br>
     <strong>Null Hypothesis: Sugar as an ingredient does not mean that the dish will have higher calories</strong><br>
     <strong>Alternative Hypothesis: Sugar as an ingredient indicates that the dish will have higher calories </strong><br>
-    To do my permutation testing, I calculate the means of calories in recipes where sugar is present as an ingredient to the mean of calories in recipes where sugar is not present as an ingredient. After conducting the permutation test with a repetition of 10000, I got the p value as 0.0 which shows significance. This means we reject the null hypothesis. This just proves correlation between sugar and calories but we would need to do a lot of further analysis to prove causation. <br>
+    To do my permutation testing, I calculate the means of calories in recipes where sugar is present as an ingredient to the mean of calories in recipes where sugar is not present as an ingredient. After conducting the permutation test by permutating the calories column with a repetition of 10000, I got the p value as 0.0 which shows significance. This means we reject the null hypothesis. This just proves correlation between sugar and calories but we would need to do a lot of further analysis to prove causation.<br>
     <iframe
   src="hypothesis.html"
   width="800"
@@ -128,9 +128,18 @@
 <h1>Final Model</h1>
 <body>
   <p>
-    
+    For the final model, I chose to remove the rating feature because after further testing, it did not improve my model's accuracy. This is because most of the rating were concentrated between 4 and 5 with no correlation to the minutes column at all. 
   </p>
 </body>
-
+<h1>Fairness Analysis</h1>
+<body>
+  <p>
+    I then conducted a fairness analysis to see if my model is fair or not. <br>
+    <strong>Null Hypothesis: The model is fair. The RMSE for minutes over 1000 and minutes under 1000 is roughly the same, and any difference is due to random chance</strong><br>
+    <strong>Alternative Hypothesis: The model is unfair. Its RMSE is higher for the dataset when minutes are over 1000 than when the minutes are under 1000.</strong><br>
+    For this, my Group X would be recipes that take under a 1000 minutes and Group Y would be recipes that take over a 1000 minutes to prepare. <br>
+    The evaluation metric I chose to conduct this fairness analysis was RMSE with the same justification I used in my framing a prediction problem section. The choice of test statistic I used was the absolute difference in the RMSE of both the groups. I ran the permutation test by permutating the minutes column(which we are predicting) with a repition of 10000. I got the resulting p_value as 0.03 which means we reject the null hypothesis. Therefore, after further analysis, I conclude that since there were over 230,000 rows with only over 1500 rows having minutes over 1000, it skewed the results for the outliers while predicting the minutes column. When we do not factor for those values, our feature of minutes_or_less column shines, giving us a much lower RMSE than when we test our model on the entire dataset. 
+  </p>
+</body>
 
 
