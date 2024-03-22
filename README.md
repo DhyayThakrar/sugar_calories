@@ -128,7 +128,7 @@
 <h1>Final Model</h1>
 <body>
   <p>
-    For the final model, I chose to remove the rating feature because after further testing, it did not improve my model's accuracy. This is because most of the rating were concentrated between 4 and 5 with no correlation to the minutes column at all. 
+    For the final model, I chose to remove the rating feature because after further testing, it did not improve my model's accuracy. This is because most of the rating were concentrated between 4 and 5 with no correlation to the minutes column at all.  Moreover, I tested the other columns in the initial dataframe but none of them directly impacted the minutes column in any form. The two numerical features we defined in the baseline model: n_steps and n_ingredients seemed good and on top of that, I decided to add two new features by making two new columns in the dataframe. The first column was calories: which is the total number of calories in the recipe. I added this column by extracting it from the nutrition column. The second column I added was quick_recipe. I did this by first making the minutes_or_less column like I did in hypothesis testing by extracting the tag from tags column. Next, I noticed that around half of the dataset had its minutes under 30. Therefore, I created a quick recipe column by one hot encoding the minutes_or_less column. Therefore, the four feautures I used for the final model were 'n_steps', 'n_ingredients', 'calories' and 'quick_recipe' which are all numerical features.
   </p>
 </body>
 <h1>Fairness Analysis</h1>
