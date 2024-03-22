@@ -27,9 +27,12 @@
   <h3>Part 1: Data Cleaning</h3>
   <p>
     For cleaning the data, I first only kept the relevant columns from a larger dataframe containing a lot of information I never used. After that, I created a new column for my dataframe called 'minutes_or_less' whose description I have given in the introduction. Furthermore, I created two new columns calorie_count and is_sugar by creating functions related to them and extracting data from already present columns. I got the resulting Dataframe's head as this: <br>
-    ![DataFrame head!](head.jpg "DataFrame head")
-    
+    <img src="head.jpg" alt="Dataframe head">
   </p>
+  <h3>Part 2: Univariate Analysis</h3>
+  
+  
+  <p>
 </body>
 
 
