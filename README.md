@@ -95,7 +95,42 @@
   </p>
 </body>
 <h1>Framing a prediction problem</h1>
-
+<body>
+  <p>
+    <strong>I will try to predict the number of minutes to prepare recipes. This will be a regression problem. This is not very much related to my previous problems, but I think predicting the number of minutes will be challenging so I am trying that</strong><br>
+    The variable I will be predicting is minutes. I chose this because while conducting bivariate analysis, it seemed like theminutes column did not have a correlation with any other columns. This will make predicting the column even tougher and I will try to do a good job at it. The metric I chose to evaluate my model is RMSE. First of all, since this is a regression problem, my 3 top choices were mean absolute error, root mean squared error and R^2. RMSE and R^2 are much more reliable metrics than MAE, and further, I chose RMSE over R^2 because RMSE provides a direct measure of the average prediction error in the same units as the response variable (minutes), making it easier to interpret the model's accuracy in terms of the actual quantity being predicted.<br>
+    At the time of the prediction, I would have access to all the columns from the initial merged dataset except for the minutes column. These columns include: 
+    <ol>
+      <li>name: Recipe name</li>
+      <li>id: Recipe ID</li>
+      <li>minutes: Minutes to prepare recipe</li>
+      <li>contributor_id: User ID who submitted this recipe</li>
+      <li>nutrition: Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value”</li>
+      <li>ingredients: List of ingredients</li>
+      <li>n_steps: Number of steps to make the recipe</li>
+      <li>n_ingredients: Number of ingredients</li>
+      <li>rating: Rating given</li>
+      <li>average_rating: Average rating</li>
+    </ol>
+  </p>
+</body>
+<h1>Baseline Model</h1>
+<body>
+  <p>
+    Features in the model: <br>
+    <ul>
+      <li>Numerical Features: n_steps and n_ingredients. I chose these features because it seemed to me like when the number of steps in a recipe are more, it would take more time, and the same would be true for the number of ingredients</li>
+      <li>Categorical Feature: Rating. Even though it contains numerical values, rating would be categorical due to it having categories. Since it is a baseline model which does not have to be perfect, I used one hot encoding for it</li>
+    </ul><br>
+  The 'rating' feature is one-hot encoded. The performance of your model is evaluated using the Root Mean Squared Error (RMSE) metric. I believe with a current RMSE of 962.67, the model is not good. This is because it is a baseline model with a lack of feature engineering and hyperparamter fine tuning. 
+  </p>
+</body>
+<h1>Final Model</h1>
+<body>
+  <p>
+    
+  </p>
+</body>
 
 
 
