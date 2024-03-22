@@ -31,6 +31,13 @@
   </p>
   <h3>Then, I conducted Univariate Analysis</h3>
   <p>
+    <iframe
+  src="univariate.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
   I performed univariate analysis on the average ratings column. From this box plot, we can see the distribution of the average ratings with the maximum value being 5.0 and the minimum being 0. We can see that most ratings are concentrated between 5 and 4.5 with very less values being below 3.5.
   </p>
   <h3>Then, I conducted Bivariate Analysis</h3>
