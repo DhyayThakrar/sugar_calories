@@ -24,16 +24,22 @@
 
 <h1>DATA CLEANING AND EXPLORATORY DATA ANALYSIS</h1>
 <body>
-  <h3>Part 1: Data Cleaning</h3>
+  <h3>First, I cleaned the data</h3>
   <p>
-    For cleaning the data, I first only kept the relevant columns from a larger dataframe containing a lot of information I never used. After that, I created a new column for my dataframe called 'minutes_or_less' whose description I have given in the introduction. Furthermore, I created two new columns calorie_count and is_sugar by creating functions related to them and extracting data from already present columns. I got the resulting Dataframe's head as this: <br>
+    For cleaning the data, I first only kept the relevant columns from a larger dataframe containing a lot of information I never used. After that, I created a new column for my dataframe called 'minutes_or_less' whose description I have given in the introduction. Furthermore, I created two new columns calorie_count and is_sugar by creating functions related to them and extracting data from already present columns. I got the resulting Dataframe's head as this: <br><br><br>
     <img src="head.jpg" alt="Dataframe head">
   </p>
-  <h3>Part 2: Univariate Analysis</h3>
-  
-  
+  <h3>Then, I conducted Univariate Analysis</h3>
   <p>
+  I performed univariate analysis on the average ratings column. From this box plot, we can see the distribution of the average ratings with the maximum value being 5.0 and the minimum being 0. We can see that most ratings are concentrated between 5 and 4.5 with very less values being below 3.5.
+  </p>
+  <h3>Then, I conducted Bivariate Analysis</h3>
+  <p>
+    
+  </p>
 </body>
+
+  
 
 
 
