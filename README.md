@@ -49,6 +49,17 @@
 ></iframe>
     From this graph, we can see that when sugar is an ingredient, there is more calories in the recipe. When sugar is not there as an ingredient, the average calories is 393.5 while when sugar is present as an ingredient, the average calories are 474.9
   </p>
+  <h3>Lastly for EDA, I created a pivot table to analyze more data</h3>
+  <p>
+    <img src="pivot_table.jpg" alt="Pivot Table">
+    <iframe
+  src="pivot.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+    In the pivot table, we can see as the preparation time is increasing for the dish, the calorie difference between recipes containing sugar and not containing sugar is decreasing. This can indicate that the recipes which are faster to make use sugar for a lot of their taste. Despite this, we can notice that for each preparation time, the calories for recipes with sugar is always higher.
+  </p>
 </body>
 
 
