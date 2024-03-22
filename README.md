@@ -61,9 +61,41 @@
     In the pivot table, we can see as the preparation time is increasing for the dish, the calorie difference between recipes containing sugar and not containing sugar is decreasing. This can indicate that the recipes which are faster to make use sugar for a lot of their taste. Despite this, we can notice that for each preparation time, the calories for recipes with sugar is always higher.
   </p>
 </body>
+<h1>ASSESSMENT OF MISSINGNESS</h1>
+<body>
+  <p>
+    For my dataset overall, I concluded that the 3 missing columns were description, review and rating for the initial merged dataframe.<br>
+    For the dataframe I currently have, rating, average_rating and minute_or_less columns have missing values. <br>
+    Out of these, I believe the ratings column was NMAR. This is because in some of the ratings which were missing, reviews still existed and they either forgot to give the rating or purposefully skipped it. We could analyze the reviews and maybe if we had more feedback from the reviewers, we could predict the ratings column.<br><br>
+  </p>
+  <p>
+    Next, I tried to assess the missingness of my minutes_or_less column. For this, I first conducted a permutation test on the column with respect to the minutes column. For this, I repeated the process 10000 times to get an accurate representation oif whether the minutes_or_less column is dependent on the minutes column. I used the difference in means of missing and non missing values as my test statistic. This showed a significant relation between the 2 columns, with the p value being 0. <br><br>
+    I also tried to prove that the minutes_or_less column was not dependent on the average ratings column. Again, I did a permutation test with 100000 repeitions and got a p value of around 1.0 which means the two columns are probably not dependent on each other
+    <iframe
+  src="missingness.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+  </p>
+</body>
+<h1>HYPOTHESIS TESTING</h1>
+<body>
+  <p>
+    Now, I will do a hypothesis testing for my initial question I presented in the introduction. <br>
+    <strong>Null Hypothesis: Sugar as an ingredient does not mean that the dish will have higher calories</strong><br>
+    <strong>Alternative Hypothesis: Sugar as an ingredient indicates that the dish will have higher calories </strong><br>
+    To do my permutation testing, I calculate the means of calories in recipes where sugar is present as an ingredient to the mean of calories in recipes where sugar is not present as an ingredient. After conducting the permutation test with a repetition of 10000, I got the p value as 0.0 which shows significance. This means we reject the null hypothesis. This just proves correlation between sugar and calories but we would need to do a lot of further analysis to prove causation. <br>
+    <iframe
+  src="hypothesis.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+  </p>
+</body>
+<h1>Framing a prediction problem</h1>
 
-
-  
 
 
 
