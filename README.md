@@ -1,6 +1,3 @@
-# sugar_calories
-This is a part of my Project at UCSD's class on Practice and Application of Data Science
+# INTRODUCTION
 
-<head> 
-    <title>My Simple Website</title>
-<\head>
+I am analyzing a dataset which contains information about various food recipes as well as their reviews gathered from [food.com](food.com)
