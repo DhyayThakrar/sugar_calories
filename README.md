@@ -10,7 +10,7 @@
       <li>name: Recipe name</li>
       <li>id: Recipe ID</li>
       <li>minutes: Minutes to prepare recipe</li>
-      <li>contributor_id: User ID of the person who submitted this recipe</li>
+      <li>contributor_id: User ID of the person who submitted the recipe</li>
       <li>nutrition: Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value”</li>
       <li>ingredients: List of ingredients</li>
       <li>rating: Rating given</li>
